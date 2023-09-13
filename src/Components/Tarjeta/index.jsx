@@ -1,18 +1,20 @@
+import MobileImg from "/img-mobile.jpg"
+import DesktopImg from "/img-desktop.jpg"
 export default function Tarjeta() {
     return (
         <div className="flex flex-col  justify-center md:flex-row">
             <div className="flex flex-col h-full md:flex-row">
 
-                <span className="flex justify-content w-[22rem] h-full">
+                <div className="flex justify-content w-[22rem] h-full">
                     <div className="w-[22rem] md:h-[90%]">
                         {/* Imagen para diseño mobile */}
-                        <img className="rounded-t-lg md:hidden" src="./src/Components/assets/img-mobile.jpg" alt="Perfume" />
+                        <img className="rounded-t-lg md:hidden" src={MobileImg} alt="" />
 
                         {/* Imagen para diseño desktop */}
-                        <img className="rounded-l-lg hidden md:flex object-contain" src="./src/Components/assets/img-desktop.jpg" alt="Perfume" />
+                        <img className="rounded-l-lg hidden md:flex object-contain" src={DesktopImg} alt="Perfume" />
                     </div>
-                </span >
-                <div className=" pb-5 bg-[#ffffff] rounded-b-lg md:rounded-r-lg">
+                </div >
+                <div className=" pb-5 bg-[#ffffff] rounded-b-lg md:rounded-l-none md:rounded-r-lg">
                     <div className="flex flex-col w-[340px] px-6 py-5 md:pl-[2rem] md:pr-[3rem]">
                         <h6 className="text-[14px] text-neutral-400 font-semibold font-montserrat mb-2 md:my-4">P E R F U M E</h6>
                         <h1 className="font-fraunces font-bold text-3xl mb-2 md:mb-4 md:text-[2.5rem]">Gabrielle Essence Eau De Parfum</h1>
